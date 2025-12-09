@@ -7,7 +7,8 @@ textArea.addEventListener("input",()=>{
     charLength=textArea.value.length;
     string1=textArea.value.trim();
     stringArray=string1.split(" ");
-    words=stringArray.length;
+    newStringArray=stringArray.filter(element=>element!="")
+    words=newStringArray.length;
     if (charLength>200){
         result.style.color="red";
     }else{
