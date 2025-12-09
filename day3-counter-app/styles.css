@@ -1,0 +1,19 @@
+.element{
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+h1{
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+#myDiv{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+}
