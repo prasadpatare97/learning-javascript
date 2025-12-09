@@ -66,3 +66,14 @@ button {
   justify-content: center;
   align-items: center;
 }
+.charCountResults{
+    font-size: 70%;
+    height: 10%;
+    width:auto;
+    margin: 5px;
+    
+}
+#charCount{
+    display: flex;
+    flex-direction: column;
+}
