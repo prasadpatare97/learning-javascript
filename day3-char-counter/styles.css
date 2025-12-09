@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  height: 100vh;         /* full viewport height */
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+}
+
+#myDiv {
+  /* Optional styling */
+  text-align: center; /* to center the text inside the div */
+}
