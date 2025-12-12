@@ -11,12 +11,12 @@ textArea.addEventListener("input",()=>{
     let chars2=stringArr2.length;
     charsCount.textContent=`characters: ${chars}`;
     charsWoSpaces.textContent=`characters (no spaces): ${chars2}`;
-    let string2=string1.replace(/\r?\n/g, " ");
-   
-    let stringArr3=string2.split(" ");
-    let stringArr4=stringArr3.filter(element=>!((element=="")||(element==" ")||(element==".")||(element==",")||(element=="!")||(element=="-")||(element=="?")||(element=="/")));
-    let words=stringArr4.length;
-    wordCount.textContent=`Words: ${words}`;
+    // let string2=string1.replace(/\s+/g, " ");
+    // let stringArr3=string2.split(" ");
+    // let stringArr4=stringArr3.filter(element=>!((element=="")||(element==" ")||(element==".")||(element==",")||(element=="!")||(element=="-")||(element=="?")||(element=="/")));
+    // let words=stringArr4.length;
+    let words2=string1.trim().length === 0 ? 0 : string1.trim().split(/\s+/).length;
+    wordCount.textContent=`Words: ${words2}`;
 })
 
 //word counter 
