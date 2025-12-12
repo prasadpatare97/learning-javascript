@@ -2,6 +2,7 @@ const textArea=document.getElementById("textArea");
 const charsCount=document.getElementById("chars");
 const charsWoSpaces=document.getElementById("charsWoSpaces");
 const wordCount=document.getElementById("wordCountResult");
+const sentCount=document.getElementById("sentCountResult");
 textArea.addEventListener("input",()=>{
     let chars=0;
     let string1=textArea.value;
@@ -17,6 +18,21 @@ textArea.addEventListener("input",()=>{
     // let words=stringArr4.length;
     let words2=string1.trim().length === 0 ? 0 : string1.trim().split(/\s+/).length;
     wordCount.textContent=`Words: ${words2}`;
+    let sentences= countSentences(string1);
+    sentCount.textContent=`Sentences: ${sentences}`;
+
 })
 
-//word counter 
+//sentence counter
+
+function countSentences(text){
+    if (/[?.!]/.test(text)){
+        let array1=text.split(/[!.?]+/);
+        let sentences=array1.filter(sentence=>sentence.trim().length > 0);
+        return sentences.length;
+    }
+    else{
+        return 0;
+    }
+
+}
