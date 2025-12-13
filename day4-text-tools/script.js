@@ -8,6 +8,8 @@ const lowerCaseBtn=document.getElementById("Lowercase");
 const sentenceCaseBtn=document.getElementById("Sentencecase");
 const titleCaseBtn=document.getElementById("Titlecase");
 const toggleCaseBtn=document.getElementById("Togglecase");
+const removeSpacesBtn=document.getElementById("Removespaces");
+const clearTextBtn=document.getElementById("Cleartext");
 const resultant=document.getElementById("resultant");
 
 textArea.addEventListener("input",()=>{
@@ -129,6 +131,43 @@ toggleCaseBtn.addEventListener("click",()=>{
     
     
 })
+
+removeSpacesBtn.addEventListener("click",()=>{
+    let string1=textArea.value;
+    let arrayOfChar=string1.split("");
+    let resultArray=Array(arrayOfChar.length);
+    let spaceFlag=false;
+    for(let i=0; i<arrayOfChar.length; i++){
+        if(/[\s]/.test(arrayOfChar[i])){
+            if(spaceFlag){
+                arrayOfChar.splice(i,1);
+                i-=1;
+            }
+            else{
+                resultArray[i]=arrayOfChar[i];
+            }
+            spaceFlag=true;
+          
+        }else{
+            spaceFlag=false;
+            resultArray[i]=arrayOfChar[i];
+        }
+    }
+    let stringResult=resultArray.join("");
+    resultant.textContent=stringResult;
+    
+    
+})
+
+clearTextBtn.addEventListener("click",()=>{
+    textArea.value="";
+    charsCount.textContent="";
+    charsWoSpaces.textContent="";
+    wordCount.textContent="";
+    sentCount.textContent="";    
+    resultant.textContent="";
+})
+
 function countSentences(text){
     if (/[?.!]/.test(text)){
         let array1=text.split(/[!.?]+/);
