@@ -30,4 +30,5 @@
 * Intent-Driven Commenting:
 * Writing comments that explain why decisions exist, not what the code does
 * **Screenshot:**
-*![Test](Screenshot (10).png)
+
+[Test](Screenshot (10).png)
