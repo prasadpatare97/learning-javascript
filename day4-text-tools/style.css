@@ -23,7 +23,7 @@ body{
     border: 1px dashed grey;
 }
 #textDiv{
-    height:30vh;
+    height:20vh;
     width: 40vw;
     margin: 5px;
     align-items: center;
@@ -32,13 +32,11 @@ body{
 }
 #outputArea{
 
-   
-    height:25vh;
+    min-height: 35vh;
     border:1px solid black;
-    margin:3px;
     text-align: center;
     width: 90vw;
-  
+    margin-top: 0.5vw;
 }
 #buttons{
     display: flex;
@@ -82,17 +80,17 @@ button {
 }
 
 #resultant{
-    line-height: 3vw;
     font-size: 2vw;
-    text-align: center;
+    line-height: 1.4;            /* stable, readable */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-
+    white-space: pre-wrap;       /* preserve empty lines */
 }
 #resultantDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+   display: block;              
+   padding: 2px;
+   text-align: center;
+   height: auto;
+   white-space: pre-wrap;
+   overflow-y: auto;
 }
