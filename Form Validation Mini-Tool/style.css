@@ -1,0 +1,38 @@
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 10% auto;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    border: 3px solid darkslategray;
+    padding: 10px;
+    background-color: lightgray;
+}
+.inputBox{
+    margin: 1px;
+}
+label{
+    min-height: 1.5em;
+}
+body{
+    background-color: lightslategray;
+}
+button{
+    background-color: lightgoldenrodyellow;
+    margin: 1vw;
+}
+#confirmation{
+    display: block;
+    color: darkgreen;
+    min-height: 1.5em;
+}
+
+#innerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+}
