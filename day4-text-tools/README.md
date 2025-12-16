@@ -31,4 +31,4 @@
 * Writing comments that explain why decisions exist, not what the code does
 * **Screenshot:**
 
-![Preview](Screenshot (10).png)
+![Preview](Screenshot (10).PNG)
