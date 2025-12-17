@@ -1,0 +1,20 @@
+
+#inputText{
+    height: 36vh;
+}
+#outputText{
+    height: 36vh;
+}
+button{
+    margin: 0.5%;
+}
+textarea{
+    margin: 0.5%;
+    width: 90vw;
+}
+h1{
+    margin: 0.5%;
+}
+#clipConfirm{
+    color: darkgreen;
+}
