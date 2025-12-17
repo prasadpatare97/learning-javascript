@@ -1,0 +1,44 @@
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10% auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    
+}
+label{
+    margin: 20% auto;
+}
+body{
+    background-color: lightblue;
+}
+input{
+    margin: 10% auto;
+}
+
+button{
+    margin-bottom: 15%;
+}
+
+#outputDiv{
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed black ;
+    width: 30vw;
+}
+
+#result{
+    margin: auto;
+    margin-bottom:4%;
+    min-height: 1.5em;
+    width: 90%;
+}
+
+#outputHeading{
+    margin-top: 2%;
+    margin-bottom: 7%;
+    color: steelblue;
+}
