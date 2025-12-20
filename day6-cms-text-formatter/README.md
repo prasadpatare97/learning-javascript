@@ -2,6 +2,12 @@
 
 
 
+\## Use case
+
+Used by digital agencies and content teams to clean raw text before publishing into CMS platforms like WordPress, Webflow, or internal editors.
+
+
+
 \## What problem it solves
 
 Cleans and normalizes raw text pasted into CMS editors. Fixes spacing, punctuation, quotes, and junk characters while preserving paragraphs.

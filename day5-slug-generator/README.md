@@ -2,6 +2,12 @@
 
 
 
+\## Use case
+
+Used by content and SEO teams to quickly generate clean, URL-safe slugs from titles before publishing articles or pages.
+
+
+
 \## What problem it solves
 
 Converts text into clean, URL-safe slugs. Removes special characters and normalizes spacing so titles can be safely used in URLs.
